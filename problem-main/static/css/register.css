@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --black: #000000;
+    --OrangeColor: #ff8b38;
+    --ButtonBg: #ff9b51;
+    --White: #ffffff;
+    --TitleColor: #212121;
+    --TextColor: #86878b;
+    --CardDesc: #999999;
+    --CardBg: #333333;
+    --ChatBg: #f5f5f5;
+    --SectionsBg: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-title__link {
+    color: #007BFF;
+}
+
+.header-title__link:hover {
+    color: #0774e8;
+    text-decoration: none;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-left: 50px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 158%;
+    color: #5A5B6A;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.nav-list__link:hover{
+    text-decoration: none;
+    transform: rotateY(0deg);
+    transform: 0.5s;
+    color: var(--OrangeColor);
+}
+.nav-list__link::after  {
+    content: '';
+    width: 100%;
+    background: var(--OrangeColor);
+    padding: 1px 0;
+    transform: rotateY(90deg);
+    transition: 0.5s;
+} 
+.nav-list__link:hover::after  {
+    content: '';
+    width: 100%;
+    background: var(--OrangeColor);
+    padding: 1px 0;
+    transform: rotateY(10deg);
+}
+
+.nav-list__link:hover {
+    text-decoration: none;
+    color: var(--OrangeColor);
+}
+
+.nav-title {
+    margin: 0;
+}
+
+.nav {
+    padding: 15px 0;
+}
+
+.header-title__img {
+    width: max-content;
+    height: max-content;
+}
+
+.header-title {
+    font-size: 50px;
+    line-height: 40px;
+    color: var(--White);
+    text-transform: uppercase;
+    margin: 30px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 400;
+    text-align: center;
+}
+.header-title__link{
+    color: #007BFF;
+}
+.header-title__link:hover{
+    color: #0774e8;
+}
+.header {
+    background: url(../img/photo_2022-11-11_19-16-23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-text {
+    text-align: center;
+    font-family: var(--RalLight);
+    font-size: 16px;
+    color: var(--White);
+    line-height: 25px;
+    margin-top: 45px;
+}
+
+.header-span {
+    color: #007BFF;
+    font-weight: 500;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 15px 70px;
+    border: 2px solid var(--White);
+    border-radius: 20px;
+    font-size: 30px;
+    color: var(--White);
+    background: var(--White);
+    color: black;
+    border: 2px solid #9b9a9a;
+    transition: 0.4s;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--OpenSansSemBold);
+}
+
+.header-link:nth-of-type(1) {
+    margin-right: 50px;
+}
+
+.header-link:hover {
+    text-decoration: none;
+    color: black;
+    background: var(--White);
+    box-shadow: 0 0 25px 1px var(--black);
+    padding: 15px 72px;
+}
+
+/* ======== Register ======= */
+.register-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top:3rem;
+}
+.register{
+    background: var(--White);
+    width: 460px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 5px;
+
+}
+.register-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: #343a3f;
+    font-weight: 500;
+    padding-bottom:10px ;
+}
+.massage {
+    margin-top: 30px;
+    width: 300px;
+    height: 80px;
+    resize: none;
+    /* border: 1px solid var(--TextColor); */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--TextColor);
+}
+.content-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.massage::placeholder {
+    text-transform: capitalize;
+    color: var(--TextColor);
+    padding-left: 15px;
+}
+
+.button {
+    padding: 11px 20px;
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s;    
+    background: var(--ButtonBg);
+    color: var(--White);
+    font-weight: 400;
+    margin-top: 80px;
+    opacity: 2;
+    text-transform: capitalize;
+}
+.button:hover{
+    box-shadow: 0 0 25px 1px #549cea;
+}
+
+/* ======== /Register ======= */
